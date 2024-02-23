@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="84dp"
+        android:text="Log in"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="352dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="64dp"
+        android:hint="Enter yuor mail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/textview"
+        app:layout_constraintStart_toStartOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/textview" />
+
+
+    <EditText
+        android:id="@+id/passwordEt"
+        android:layout_width="349dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/emailEt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailEt"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="128dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80dp"
+        android:text="Login"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/passwordEt"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/passwordEt"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEt"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/googleBtn"
+        android:layout_width="203dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/text_back"
+        android:drawableLeft="@drawable/google_search"
+        android:drawablePadding="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="Google"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/goRegister"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.12"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/goRegister"
+        android:layout_width="266dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="168dp"
+        android:text="Don't Have an Account. Register?"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/loginBtn"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/loginBtn"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
